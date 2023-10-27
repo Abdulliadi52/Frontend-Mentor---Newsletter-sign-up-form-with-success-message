@@ -1,0 +1,319 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+.bod {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(235, 18%, 26%);
+  padding: 0px 20px;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  height: 480px;
+}
+.main.active {
+  display: none;
+}
+.main .left {
+  margin: 10px;
+  width: 400px;
+  padding-left: 20px;
+}
+.left h1 {
+  font-weight: 600;
+  font-size: 53px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.left .p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.left li {
+  display: flex;
+  line-height: 40px;
+}
+.left li p {
+  padding-left: 1rem;
+  font-weight: bold;
+}
+/* .left ul {
+  margin-left: 1.7rem;
+}
+.left ul li {
+  margin: 10px 0px;
+  font-size: 16px;
+  display: flex;
+  list-style: none;
+}
+.left .paragraph {
+  padding-left: 1rem;
+} */
+label {
+  margin: 10px 0px;
+  font-size: 13px;
+}
+input[type="email"] {
+  margin: 10px 0;
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  font-weight: 400;
+  border-radius: 7px;
+}
+.left .btn {
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  font-weight: 400;
+  border-radius: 7px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  /* background: linear-gradient(to right, rgb(212, 71, 45), hsl(4, 100%, 67%)); */
+}
+.left .btn:active {
+  color: white;
+  background: linear-gradient(to right, rgb(212, 71, 45), hsl(4, 100%, 67%));
+}
+
+.right {
+  width: 270px;
+  background-image: url(image/illustration-sign-up-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+/* .right img {
+  width: 270px;
+} */
+
+/* sucess */
+.popup {
+  display: none;
+  width: 370px;
+  height: 390px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 15px 30px 30px;
+  text-align: center;
+  color: #333;
+}
+.popup.active {
+  display: block;
+}
+.popup h1 {
+  margin-bottom: 15px;
+}
+.popup span img {
+  margin-bottom: 10px;
+}
+.popup p {
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.popup p span {
+  font-weight: 600;
+}
+.popup button {
+  width: 100%;
+  padding: 13px 0px;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.popup button:hover {
+  color: white;
+  background-color: hsl(4, 100%, 67%);
+}
+@media (max-width: 800px) {
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+    border-radius: 0px;
+  }
+  .main .left {
+    margin: 10px;
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .bod {
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .right {
+    background-image: url(image/illustration-sign-up-mobile.svg);
+    height: 300px;
+    width: 100%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .left h1 {
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  .left .p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+  .left li {
+    display: flex;
+    line-height: 40px;
+  }
+  .left li p {
+    padding-left: 1rem;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 650px;
+  }
+  label {
+    font-size: 15px;
+  }
+  input[type="email"] {
+    margin: 10px 0;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+    font-weight: 400;
+    border-radius: 7px;
+  }
+  .left .btn {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+    font-weight: 400;
+    border-radius: 7px;
+    color: white;
+    background-color: black;
+    /* background: linear-gradient(to right, rgb(212, 71, 45), hsl(4, 100%, 67%)); */
+  }
+  .left .btn:active {
+    color: white;
+    background: linear-gradient(to right, rgb(212, 71, 45), hsl(4, 100%, 67%));
+  }
+  .popup {
+    height: 100vh;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: initial;
+    background-color: white;
+    border-radius: 0px;
+    padding: 30px;
+    color: #333;
+    padding-top: 5rem;
+    position: relative;
+  }
+  .popup button {
+    position: fixed;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -5%);
+    width: 80%;
+  }
+  .popup span img {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .left h1 {
+    font-weight: 600;
+    font-size: 55px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  .popup button {
+    width: 85%;
+  }
+}
+@media (max-width: 442px) {
+  .left h1 {
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 409px) {
+  .left h1 {
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .left h1 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  .left .p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+  .left li {
+    display: flex;
+    line-height: 30px;
+  }
+  .left li p {
+    padding-left: 1rem;
+    font-size: 13px;
+    letter-spacing: 0.5 px;
+  }
+  form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 650px;
+  }
+  label {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
