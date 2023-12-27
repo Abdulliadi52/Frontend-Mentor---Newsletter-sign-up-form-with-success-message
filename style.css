@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .bod {
   display: flex;
@@ -51,18 +53,6 @@
   padding-left: 1rem;
   font-weight: bold;
 }
-/* .left ul {
-  margin-left: 1.7rem;
-}
-.left ul li {
-  margin: 10px 0px;
-  font-size: 16px;
-  display: flex;
-  list-style: none;
-}
-.left .paragraph {
-  padding-left: 1rem;
-} */
 label {
   margin: 10px 0px;
   font-size: 13px;
@@ -86,7 +76,6 @@ input[type="email"] {
   color: white;
   background-color: black;
   cursor: pointer;
-  /* background: linear-gradient(to right, rgb(212, 71, 45), hsl(4, 100%, 67%)); */
 }
 .left .btn:active {
   color: white;
@@ -100,10 +89,6 @@ input[type="email"] {
   background-size: cover;
   border-radius: 10px;
 }
-/* .right img {
-  width: 270px;
-} */
-
 /* sucess */
 .popup {
   display: none;
