@@ -5,11 +5,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  /* border: 1px solid red; */
 }
 .bod {
   display: flex;
-  width: 100%;
-  max-width: 1440px;
+  width: 100vw;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -18,20 +18,21 @@
 }
 .main {
   display: flex;
-  flex-direction: row;
-  gap: 25px;
-  max-width: 1200px;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 10px;
+  width: 800px;
   background-color: white;
   border-radius: 10px;
   padding: 15px;
-  height: 480px;
+  height: fit-content;
 }
 .main.active {
   display: none;
 }
 .main .left {
   margin: 10px;
-  width: 400px;
+  width: 55%;
   padding-left: 20px;
 }
 .left h1 {
@@ -83,11 +84,12 @@ input[type="email"] {
 }
 
 .right {
-  width: 270px;
+  width: 45%;
   background-image: url(image/illustration-sign-up-desktop.svg);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
+  max-height: 100%;
 }
 /* sucess */
 .popup {
@@ -132,10 +134,18 @@ input[type="email"] {
   color: white;
   background-color: hsl(4, 100%, 67%);
 }
-@media (max-width: 800px) {
+@media (max-width: 750px) {
+  .bod {
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
   .main {
     display: flex;
     flex-direction: column-reverse;
+    align-items: start;
+    justify-content: center;
     gap: 0px;
     width: 100%;
     margin: 0;
@@ -149,18 +159,15 @@ input[type="email"] {
     width: 100%;
     padding: 0px 30px;
   }
-  .bod {
-    display: block;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-  }
+
   .right {
     background-image: url(image/illustration-sign-up-mobile.svg);
     height: 300px;
     width: 100%;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   .left h1 {
     font-weight: 600;
